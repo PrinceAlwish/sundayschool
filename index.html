@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 10 Favorite Kids Songs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #38a1db;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      margin: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top 10 Favorite Kids Songs</h1>
+  </header>
+  <main>
+    <div id="lyrics">
+      <!-- Lyrics will be dynamically added here -->
+    </div>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Object containing songs and their lyrics
+      const songs = [
+        {
+          title: "Twinkle, Twinkle, Little Star",
+          lyrics: `
+            <h2>Twinkle, Twinkle, Little Star</h2>
+            <p>Twinkle, twinkle, little star,</p>
+            <p>How I wonder what you are!</p>
+            <p>Up above the world so high,</p>
+            <p>Like a diamond in the sky.</p>
+          `
+        },
+        {
+          title: "The Wheels on the Bus",
+          lyrics: `
+            <h2>The Wheels on the Bus</h2>
+            <p>The wheels on the bus go round and round,</p>
+            <p>Round and round, round and round.</p>
+            <p>The wheels on the bus go round and round,</p>
+            <p>All through the town.</p>
+            <!-- Include more lyrics as needed -->
+          `
+        },
+  {
+  title: "Old MacDonald Had a Farm",
+  lyrics: `
+    <h2>Old MacDonald Had a Farm</h2>
+    <p>Old MacDonald had a farm, E-I-E-I-O,</p>
+    <p>And on his farm, he had a cow, E-I-E-I-O,</p>
+    <p>With a moo-moo here and a moo-moo there,</p>
+    <p>Here a moo, there a moo, everywhere a moo-moo,</p>
+    <p>Old MacDonald had a farm, E-I-E-I-O.</p>
+    <!-- Add verses for other animals -->
+  `
+},
+{
+  title: "Baby Shark",
+  lyrics: `
+    <h2>Baby Shark</h2>
+    <p>Baby shark, doo doo doo doo doo doo,</p>
+    <p>Baby shark, doo doo doo doo doo doo,</p>
+    <p>Baby shark, doo doo doo doo doo doo,</p>
+    <p>Baby shark!</p>
+    <!-- Include more verses -->
+  `
+},
+{
+  title: "If You're Happy and You Know It",
+  lyrics: `
+    <h2>If You're Happy and You Know It</h2>
+    <p>If you're happy and you know it, clap your hands,</p>
+    <p>If you're happy and you know it, clap your hands,</p>
+    <p>If you're happy and you know it, then your face will surely show it,</p>
+    <p>If you're happy and you know it, clap your hands!</p>
+    <!-- Add more actions -->
+  `
+},
+{
+  title: "The Alphabet Song",
+  lyrics: `
+    <h2>The Alphabet Song</h2>
+    <p>A, B, C, D, E, F, G,</p>
+    <p>H, I, J, K, L, M, N, O, P,</p>
+    <p>Q, R, S, T, U, V,</p>
+    <p>W, X, Y, and Z,</p>
+    <p>Now I know my ABCs,</p>
+    <p>Next time, won't you sing with me?</p>
+  `
+},
+{
+  title: "Five Little Ducks",
+  lyrics: `
+    <h2>Five Little Ducks</h2>
+    <p>Five little ducks went out one day,</p>
+    <p>Over the hills and far away,</p>
+    <p>Mother duck said, "Quack, quack, quack, quack."</p>
+    <p>But only four little ducks came back.</p>
+    <!-- Continue the story -->
+  `
+},
+{
+  title: "Row, Row, Row Your Boat",
+  lyrics: `
+    <h2>Row, Row, Row Your Boat</h2>
+    <p>Row, row, row your boat,</p>
+    <p>Gently down the stream,</p>
+    <p>Merrily, merrily, merrily, merrily,</p>
+    <p>Life is but a dream.</p>
+    <!-- Add more verses -->
+  `
+},
+{
+  title: "BINGO",
+  lyrics: `
+    <h2>BINGO</h2>
+    <p>There was a farmer who had a dog,</p>
+    <p>And Bingo was his name-o.</p>
+    <p>B-I-N-G-O,</p>
+    <p>B-I-N-G-O,</p>
+    <p>B-I-N-G-O,</p>
+    <p>And Bingo was his name-o!</p>
+    <!-- Continue with clapping actions -->
+  `
+},
+{
+  title: "Head, Shoulders, Knees and Toes",
+  lyrics: `
+    <h2>Head, Shoulders, Knees and Toes</h2>
+    <p>Head, shoulders, knees, and toes,</p>
+    <p>Knees and toes.</p>
+    <p>Head, shoulders, knees, and toes,</p>
+    <p>Knees and toes.</p>
+    <p>And eyes, and ears, and mouth,</p>
+    <p>And nose.</p>
+    <p>Head, shoulders, knees, and toes,</p>
+    <p>Knees and toes.</p>
+  `
+}
+
+      ];
+
+      // Get the lyrics container element
+      const lyricsContainer = document.getElementById('lyrics');
+
+      // Add lyrics to the container
+      songs.forEach(song => {
+        const songDiv = document.createElement('div');
+        songDiv.innerHTML = song.lyrics;
+        lyricsContainer.appendChild(songDiv);
+      });
+    });
+  </script>
+</body>
+</html>
